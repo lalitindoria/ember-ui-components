@@ -1,0 +1,12 @@
+<thead>
+  <tr>
+    {{#each @headerCols as |heading index|}}
+      <th>
+        {{heading.title}}
+        {{#if heading.sortable}}
+          <a href="#" {{action this.args.sort index}}>&#8645;</a>
+        {{/if}}
+      </th>
+    {{/each}}
+  </tr>
+</thead>

@@ -1,0 +1,26 @@
+<div class="jumbotron jumbotron-fluid {{if this.theme.isDark 'bg-dark text-white' ''}}">
+  <div class="container">
+    <h1 class="display-4">UI Components</h1>
+    <p class="lead">This is a UI components library built using Ember JS and Bootstrap 4.</p>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card {{if this.theme.isDark 'bg-dark text-white' ''}}">
+    <div class="card-body">
+      <h5 class="card-title">Table</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Sortable and paginated</h6>
+      <p class="card-text">Documentation and example of tables component along with options and markup.
+      </p>
+      {{#link-to 'table' class='card-link'}}View Docs{{/link-to}}
+    </div>
+  </div>
+  <div class="card {{if this.theme.isDark 'bg-dark text-white' ''}}">
+    <div class="card-body">
+      <h5 class="card-title">Theme</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Dark and light themes</h6>
+      <p class="card-text">Some quick examples to help you get started with the themes available.
+      </p>
+      {{#link-to 'theme' class='card-link'}}Change Theme{{/link-to}}
+    </div>
+  </div>
+</div>

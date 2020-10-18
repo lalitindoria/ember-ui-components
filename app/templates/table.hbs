@@ -1,0 +1,10 @@
+<div class="table-container p-5">
+  <h1 class="h1">Table Component</h1>
+  <Table id="sample-table" class="table table-striped {{if this.theme.isDark 'table-dark' ''}}" @maxRows={{this.maxRows}} @updateRows={{this.updateRows}}
+    @rows={{this.tableContent}} as |table|>
+    <table.header @headerCols={{this.headerCols}} />
+    <table.body @rows={{this.tableContent}} />
+  </Table>
+  <hr />
+  {{#link-to 'index'}}Back to Index{{/link-to}}
+</div>

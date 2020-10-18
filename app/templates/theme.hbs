@@ -1,0 +1,12 @@
+<div class="theme-container p-5 {{if this.theme.isDark 'bg-dark text-white' ''}}">
+  <h1 class="display-4">Theme</h1>
+  <p class="lead">
+    Toggling the below switch will change the theme of the site.
+  </p>
+  <div class="custom-control custom-switch">
+    <Input type='checkbox' class='custom-control-input' id='change-theme' {{on 'change' this.changeTheme}} checked={{this.theme.isDark}} />
+    <label class="custom-control-label" for="change-theme">Apply Dark Theme</label>
+  </div>
+  <hr />
+  {{#link-to 'index'}}Back to Index{{/link-to}}
+</div>
